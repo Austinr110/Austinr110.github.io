@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Party</title>
+        <link rel="stylesheet" href="./resources/css/index.css">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.2/dist/confetti.browser.min.js"></script>
+        <script>
+            function play() {
+   var audio = document.getElementById("audio");
+   audio.play(); }
+
+               function partyButton() {
+                   play();
+                   confetti();                  
+                  
+               }
+       </script>
+    
+        
+        
+    </head>
+    <body>
+        <!-- Banner section -->
+        <header class="banner">
+            <h1 class="bold">You've come to the right place.</h1>
+            <p>Here is an image of a party.</p>
+            <img id="banner-image" src="./resources/images/party-image.jpg" alt="">
+            
+        </header>
+        
+
+        <!-- Content section -->
+        <main class="content">
+                <h2 id="question" class="bold">But I must ask...</h2>
+            <form action="get">
+                <p id="like2party" for="text">Do you like to party?</p>
+                <br>
+                <select id="like-party" name="like-party">
+                 <option></option>   
+                 <option value="yes">yes</option>   
+                </select>
+                <br>
+                <br>
+                </form>
+            
+                <button id="begin-party-button" type="button" onclick="partyButton()">Begin the party</button>
+                <audio id="audio" src="resources/sounds/party-sound.mp3"></audio>
+
+        </main>
+
+    </body>
+</html>

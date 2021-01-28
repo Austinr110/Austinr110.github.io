@@ -1,0 +1,55 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.banner {
+    background-color: rgb(179, 17, 117);
+    color:turquoise;
+    text-align: center;
+    padding: 15px 0px 0px 0px;
+    margin: 0;
+    width: 100vw;
+     }
+#banner-image {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+    p {
+    font-size: 24px;
+}
+.bold {
+    font-weight: 900;
+
+}
+main {
+    padding: 100px 0px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 80vh;
+
+}
+#like-party {
+    margin-bottom: 50px;
+}
+#like2party {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+select {
+    width: 100px;
+    height: 40px;
+    font-size: 30px;
+}
+#begin-party-button {
+    width: 150px;
+    height: 25px;
+    font-family: cursive;
+}
+#question {
+    font-size: 50px;
+}
