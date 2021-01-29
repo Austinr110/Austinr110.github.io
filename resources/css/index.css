@@ -43,6 +43,7 @@ header {
 
 }
 main {
+    width: 100%;
     padding: 100px 0px;
     background-color: black;
     color: white;
