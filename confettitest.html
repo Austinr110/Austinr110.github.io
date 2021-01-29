@@ -17,33 +17,31 @@
                   
                }
        </script>
-    
-        
-        
-    </head>
+   </head>
     <body>
         <!-- Banner section -->
-        <header class="banner">
-            <h1 class="bold">You've come to the right place.</h1>
+        <header>
+        <div class="banner">
+            <h1>You've come to the right place.</h1>
             <p>Here is an image of a party.</p>
-            <img id="banner-image" src="./resources/images/party-image.jpg" alt="">
-            
+        </div>
+        <img id="banner-image" src="./resources/images/party-image.jpg" alt="">
         </header>
-        
 
         <!-- Content section -->
         <main class="content">
-                <h2 id="question" class="bold">But I must ask...</h2>
-            <form action="get">
+                <h2>But I must ask...</h2>
+            <div id="question-container">
                 <p id="like2party" for="text">Do you like to party?</p>
                 <br>
                 <select id="like-party" name="like-party">
                  <option></option>   
                  <option value="yes">yes</option>   
                 </select>
+            </div>    
                 <br>
                 <br>
-                </form>
+                
             
                 <button id="begin-party-button" type="button" onclick="partyButton()">Begin the party</button>
                 <audio id="audio" src="resources/sounds/party-sound.mp3"></audio>
