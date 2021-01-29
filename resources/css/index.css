@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 body{
-    width: 100%;
-    height: 100%;
+    padding: 0;
     margin: 0;
     font-family: 'Oswald',Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
 }
 p {
     font-size: 36px;
@@ -17,27 +17,34 @@ h2 {
     font-weight: 900;
 }
 header {
-    height: 80vh;
-    width: 100vw;
-    background-color: black;
-}
-.banner {
-    display: block;
     background-color: rgb(179, 17, 117);
     color:turquoise;
     text-align: center;
     width: 100%;
-    height: 100px;
-    padding: 20px;
-    padding-bottom: 30px;
-    line-height: 0.5;
-     }
+    padding: 5px 0;
+    padding-bottom: 1px;
+    margin: 0; auto;
+    height: 20%;
+
+}
+@media only screen and (min-width: 1200px) {
+    .image-container {
+        height: 1100px;
+    } 
+}
+
+.image-container {
+    overflow: hidden;
+    height: 30%;
+    width: 100%;
+}
 
 #banner-image {
-    display: block;
     width: 100%;
-    height: auto;
+    overflow: hidden;
     position: relative;
+    margin: 0;
+
 
 }
 main {
@@ -45,10 +52,14 @@ main {
     background-color: black;
     color: white;
     text-align: center;
+    position: static;
+    margin: 10px;
     height: 80vh;
+} 
 
-}
+
 #question-container {
+    display: block;
     padding: 50px;
     margin: 50px;
 }
@@ -80,3 +91,4 @@ select {
     cursor: pointer;
 
 }
+
