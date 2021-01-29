@@ -51,7 +51,9 @@ main {
     text-align: center;
     position: static;
     margin: 10px;
+    margin-bottom: 20px;
     height: 80vh;
+    
 } 
 
 
