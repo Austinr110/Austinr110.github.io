@@ -92,4 +92,7 @@ select {
     cursor: pointer;
 
 }
-
+footer {
+    display: block;
+    height: 1px;
+    width: 98%;
