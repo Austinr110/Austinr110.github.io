@@ -162,3 +162,8 @@ main h1 {
 .site-container:hover .img-top {
     display: inline;
 }
+@media only screen and (max-width: 600px) {
+    .site-container:hover {
+        height: 10%;
+    }
+}
