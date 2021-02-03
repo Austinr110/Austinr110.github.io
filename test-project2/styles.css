@@ -1,0 +1,164 @@
+html {
+    scroll-behavior: smooth;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+ 
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    width: 100%;
+
+}
+
+/* ---------- Header and Main Photo ---------- */
+
+
+header {
+    display: flex;
+    margin: 0;
+    width: 100vw;
+    height: 7%;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: linear-gradient(rgb(37, 43, 41), black, black);
+ }
+
+ #header-name {
+    padding-left: 1%;
+    text-align: left;
+  }
+
+nav {
+    text-align: right;
+    flex-grow: 1;
+    }
+
+nav span {
+    display: inline-block;
+    padding: 1% 4% 1.5% 4%;
+    border-radius: 5%;
+}
+
+nav span:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.795), rgb(70, 66, 66), rgba(0, 0, 0, 0.027));
+    opacity: 90%;
+}
+
+main {
+    position: relative;
+    justify-content: center;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 3%;
+    background-image: url(./resources/images/austin-main-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .text-container {
+    display: block;
+    margin: 25vh 50vw 500px 10vw;
+    position: absolute;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 5.33rem;
+}
+main h1 {
+    background-color: black;
+    background-attachment: border-box;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 1;
+    }
+
+@media only screen and (max-width: 600px) { 
+
+    main {
+        height: 100vh;
+        background-position: 90% 10%;
+    }
+    main .text-container {
+        margin: 30vh 10vw 0 15vw;
+        font-size: 1.75rem;  
+    }
+    main h1 span {
+        display: block;
+    }
+  }
+
+
+
+
+#work-examples h2 {
+    font-size: 3rem;
+    padding-top: 10%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+
+
+.main-content-container {
+    display: flex;
+    width: 60%;
+    height: 80vh;
+    margin: 10vh auto;
+    margin-top: 1%;
+    padding: 10vh 0;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: nowrap;
+
+}
+
+
+.site-container {
+    width: 400px;
+    height: 400px;
+    overflow: visible;
+}
+.site-container h3 {
+    color: white;
+    line-height: 1.5;
+    padding-top: 10%;
+}
+.site-container:hover {
+    border: 2px solid rgb(70, 66, 66);
+    position: relative;
+    box-sizing: border-box;
+    bottom: 5px;
+    right: 5px;
+    width: auto;
+    box-shadow: 7px 7px cadetblue;
+
+}
+.site-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.site-container .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.site-container:hover .img-top {
+    display: inline;
+}
