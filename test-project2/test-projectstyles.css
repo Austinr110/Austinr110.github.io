@@ -164,6 +164,6 @@ main h1 {
 }
 @media only screen and (max-width: 600px) {
     .site-container:hover {
-        height: 10%;
+        height: 40%;
     }
 }
