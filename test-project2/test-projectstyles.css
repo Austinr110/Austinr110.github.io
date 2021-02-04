@@ -100,6 +100,7 @@ main a {
     border-radius: 5%;
     text-decoration: none;
     display: inline-block;
+    z-index: 3;
     opacity: 60%;
 }    
 main a:hover {
