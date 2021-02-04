@@ -34,6 +34,7 @@ header {
     align-items: center;
     color: white;
     background-image: linear-gradient(rgb(37, 43, 41), black, black);
+    font-size: 1.25rem;
  }
 
  #header-name {
@@ -76,15 +77,33 @@ main .text-container {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
     font-size: 5.33rem;
-}
+   }
 main h1 {
     background-color: black;
     background-attachment: border-box;
     padding: 0;
     margin: 0;
     text-align: center;
-    line-height: 1;
+    line-height: 0.95;
+    border-radius: 2%;
     }
+
+main a {
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 85vh;
+    margin-left: 50vw;
+    padding: 15px 20px;
+    color: black;
+    background-color: white;
+    border-radius: 5%;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 60%;
+}    
+main a:hover {
+    opacity: 100%;
+}
 
 @media only screen and (max-width: 600px) { 
 
@@ -94,63 +113,72 @@ main h1 {
     }
     main .text-container {
         margin: 30vh 10vw 0 15vw;
-        font-size: 1.75rem;  
+        font-size: 1.75rem; 
+        background-color: rgba(0, 0, 0, 0.315);
     }
     main h1 span {
         display: block;
     }
+    main a {
+        padding-top: 1%;
+        margin-top: 88vh;
+    }
   }
 
-
+/* ------- Work examples ---------- */
 
 
 #work-examples h2 {
     font-size: 3rem;
-    padding-top: 10%;
+    padding-top: 12%;
     margin-bottom: 0;
     text-align: center;
 }
 
-
-
-
 .main-content-container {
-    display: flex;
-    width: 60%;
+    display: block;
+    width: 85%;
     height: 80vh;
     margin: 10vh auto;
     margin-top: 1%;
-    padding: 10vh 0;
-    justify-content: space-evenly;
+    padding: 10vh 10vw;
+    
+}
+.flex-container {
+    display: flex;
+    max-height: 100%;
+    justify-content: space-around;
     text-align: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
 }
-
-
 .site-container {
     width: 400px;
     height: 400px;
+    flex: 0 1 400px;
+    margin: 50px 10px;
+    border-radius: 3%;
     overflow: visible;
 }
 .site-container h3 {
     color: white;
     line-height: 1.5;
-    padding-top: 10%;
+    padding-top: 2rem;
 }
 .site-container:hover {
-    border: 2px solid rgb(70, 66, 66);
+    border: 5px outset rgb(70, 66, 66);
     position: relative;
     box-sizing: border-box;
     bottom: 5px;
     right: 5px;
-    width: auto;
     box-shadow: 7px 7px cadetblue;
 
 }
 .site-container img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 3%;
+  
 }
 .site-container .img-top {
     display: none;
@@ -158,13 +186,17 @@ main h1 {
     top: 0;
     left: 0;
     z-index: 99;
+    border-radius: 3%;
+    object-fit: cover;
 }
 .site-container:hover .img-top {
     display: inline;
 }
+
 @media only screen and (max-width: 600px) {
-    .site-container:hover {
-        height: 200px;
-        width: 200px;
+
+    .site-container {
+        margin: 2%;
     }
+  
 }
